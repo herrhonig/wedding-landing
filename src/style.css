@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Betmo';
-  src: url('/fonts/betmo.otf') format('opentype');
+  src: url('/fonts/betmo-regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -21,7 +21,8 @@
 :root {
     --bg-primary: #efefef;
     --bg-secondary: #FFE2E2;
-    --bg-intro: #FFFFFFE0;
+    --bg-intro: #FFFFFFCC;
+    --bg-description: #FFFFFFE0;
     --accent: #f5e6e8;
     --text-primary: #000;
     --text-secondary: #594E42;
@@ -61,6 +62,8 @@ section {
     height: 100%;
     background: var(--bg-secondary);
     border-radius: 20px;
+    overflow-y: scroll;
+    padding-bottom: 20px;
 }
 
 .content-narrow {
@@ -113,7 +116,7 @@ section {
 .intro_name_couple-text {
     text-align: center;
     color: var(--text-primary);
-    font-family: 'Patriciana';
+    font-family: Patriciana;
     font-size: 45pt;
 }
 
@@ -144,7 +147,7 @@ section {
     gap: 24px;
     height: 90px;
     margin-top: 0;
-    font-family: 'Patriciana';
+    font-family: Patriciana;
     color: var(--text-primary);
 }
 
@@ -198,4 +201,219 @@ section {
 
 /* INTRO END */
 
-/* DESCRIBTION */
+/* DESCRIPTION */
+
+.description {
+    padding: 0 130px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description-block {
+    width: 100%;
+    padding: 30px 130px;
+    background: var(--bg-description);
+}
+
+.description-block_greeting {
+    width: 100%;
+    min-height: 112px;
+    font-size: 76px;
+    padding: 15px 0;
+    text-align: center;
+    font-family: Patriciana;
+}
+
+.description-block_greeting_text {
+    text-align: center;
+    font-size: 27px;
+    padding-bottom: 30px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-weight: 300;
+}
+
+.description-block_greeting_time_block {        min-height: 76px;
+    vertical-align: text-top;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+.description-pretty-text {
+    min-height: 83px;
+    width: 100%;
+    font-size: 54px;
+    text-align: center;
+    font-family: Betmo;
+}
+
+.description-section-title {
+    width: 100%;
+    min-height: 77px;
+    font-size: 27.129pt;
+    line-height: 1.5;
+    letter-spacing: 0;
+    text-align: center;
+    font-family: Patriciana;
+}
+
+.description-section-text {
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 0.04;
+    font-weight: 300;
+    padding-bottom: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.description_photo_block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    > img {
+        width: 45%;
+        height: 800px;
+        object-fit: cover;
+        object-position: center top;
+        border-radius: 200px;
+        margin-bottom: 20px;
+    }
+}
+
+.description_photo_block-text {
+    min-height: 92px;
+    padding-bottom: 15px;
+    font-size: 74px;
+    font-family: Betmo;
+    text-align: center;
+    line-height: 1;
+}
+
+.description_photo_block__couple {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    > img {
+        width: 75%;
+        height: 60%;
+        object-fit: cover;
+        object-position: center top;
+    }
+}
+
+@media (max-width: 768px) {
+    .description {
+        margin-top: 40px;
+        padding: 0 30px;
+    }
+
+    .description-block {
+        padding: 30px;
+    }
+
+    .description-block_greeting {
+        width: 100%;
+        min-height: 112px;
+        font-size: 26px;
+        padding: 15px 0;
+        text-align: center;
+        font-family: Patriciana;
+    }
+
+    .description-block_greeting_text {
+        text-align: center;
+        font-size: 17px;
+        padding-bottom: 20px;
+        line-height: 1.5;
+        letter-spacing: 0;
+        font-weight: 300;
+    }
+
+    .description-block_greeting_time_block {
+        min-height: 76px;
+        vertical-align: text-top;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0;
+    }
+
+    .description-section-title {
+        width: 100%;
+        min-height: 38px;
+        font-size: 23px;
+        line-height: 1.5;
+        letter-spacing: 0;
+        text-align: center;
+        font-family: Patriciana;
+    }
+
+    .description-section-text {
+        font-size: 13px;
+        line-height: 1.4;
+        letter-spacing: 0.06;
+        font-weight: 300;
+        padding-bottom: 40px;
+    }
+
+    .description-pretty-text {
+        min-height: 53px;
+        width: 100%;
+        font-size: 34px;
+        text-align: center;
+        font-family: Betmo;
+    }
+
+    .description_photo_block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        > img {
+            width: 205px;
+            height: 353px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 200px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .description_photo_block-text {
+        min-height: 52px;
+        padding-bottom: 15px;
+        font-size: 34px;
+        font-family: Betmo;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .description_photo_block__couple {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        > img {
+            width: 228px;
+            height: 224px;
+            object-fit: cover;
+            object-position: center top;
+        }
+    }
+}
