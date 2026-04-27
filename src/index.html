@@ -14,7 +14,9 @@
     />
   </head>
   <body>
+    <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script defer type="module" src="./timer.js"></script>
+    <script defer type="module" src="./location.js"></script>
 
     <div class="content">
       <section class="intro">
@@ -25,7 +27,7 @@
             <span class="intro_name_couple-text">Виталий</span>
           </div>
           <img
-            src="/assets//couple_resized_compressed.webp"
+            src="/assets/couple_resized_compressed.webp"
             alt="intro-couple-pic"
             fetchpriority="high"
             object-fit="contain"
@@ -212,7 +214,14 @@
           </div>
         </div>
       </section>
-      <section class="location"></section>
+      <section class="location">
+        <div class="location-wrapper">
+          <div class="location-block_title">
+            <span>Локация</span>
+          </div>
+          <div id="map" class="iframe-map"></div>
+        </div>
+      </section>
     </div>
   </body>
 </html>

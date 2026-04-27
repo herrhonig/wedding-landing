@@ -24,6 +24,7 @@
   --bg-intro: #ffffffcc;
   --bg-description: #ffffffe0;
   --bg-timetable: #ffffffe0;
+  --bg-location: #ffffffe0;
   --accent: #f5e6e8;
   --text-primary: #000;
   --text-secondary: #594e42;
@@ -436,6 +437,7 @@ section {
   padding: 60px 0 15px;
   gap: 35px;
   margin-top: 70px;
+  margin-bottom: 30px;
   width: 100%;
   background: var(--bg-timetable);
 }
@@ -567,3 +569,54 @@ section {
 /* TIMETABLE END */
 
 /* GEO */
+
+.location {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.location-wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: var(--bg-timetable);
+}
+
+.location-block_title {
+  min-height: 65px;
+  font-size: 65px;
+  text-align: center;
+  font-family: Patriciana;
+  margin-bottom: 30px;
+}
+
+.iframe-map {
+  height: 400px;
+  width: 100%;
+  min-width: 800px;
+}
+
+@media (max-width: 768px) {
+  .location {
+    width: 100%;
+    max-width: unset;
+  }
+
+  .location-wrapper {
+    align-self: center;
+  }
+
+  .location-block_title {
+    min-height: 65px;
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+
+  .iframe-map {
+    height: 400px;
+    width: 400px;
+    min-width: unset;
+  }
+}
