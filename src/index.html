@@ -14,6 +14,8 @@
     />
   </head>
   <body>
+    <script defer type="module" src="./timer.js"></script>
+
     <div class="content">
       <section class="intro">
         <div class="intro_name-block">
@@ -36,23 +38,23 @@
         </div>
         <div class="intro_counter-block">
           <span class="intro_counter-block_date">
-            <b class="counter-value">04</b>
+            <b id="weeks" class="counter-value"></b>
             <span class="rest-time">недель</span>
           </span>
           <span class="intro_counter-block_date">
-            <b class="counter-value">04</b>
+            <b id="days" class="counter-value"></b>
             <span class="rest-time">дней</span>
           </span>
           <span class="intro_counter-block_date">
-            <b class="counter-value">04</b>
+            <b id="hours" class="counter-value"></b>
             <span class="rest-time">часов</span>
           </span>
           <span class="intro_counter-block_date">
-            <b class="counter-value">04</b>
+            <b id="minutes" class="counter-value"></b>
             <span class="rest-time">минут</span>
           </span>
           <span class="intro_counter-block_date">
-            <b class="counter-value">04</b>
+            <b id="seconds" class="counter-value counter-value seconds"></b>
             <span class="rest-time">секунд</span>
           </span>
         </div>
