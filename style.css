@@ -1,15 +1,13 @@
 @font-face {
   font-family: "Betmo";
   src: url("/fonts/betmo-regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Patriciana";
   src: url("/fonts/patriciana.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
+  font-display: swap;
 }
 
 * {
@@ -53,6 +51,20 @@ body {
   box-shadow:
     1px 1px 5px rgba(0, 0, 0, 0.3),
     -3px -1px 12px 1px #96a3a5 inset;
+}
+
+.check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 section {
