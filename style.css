@@ -128,18 +128,16 @@ section {
   flex-direction: column;
   align-items: flex-end;
   align-self: flex-end;
-  margin-right: 50px;
+  margin-right: 20%;
   font-weight: normal;
   letter-spacing: 0.1;
   color: var(--text-primary);
 }
 
 .intro_date-block_date {
-  font-size: 18px;
-}
-
-.intro_date-block_date-text {
-  font-size: 16px;
+  font-size: 20px;
+  font-family: Patriciana;
+  font-weight: bolder;
 }
 
 .intro_counter-block {
@@ -180,12 +178,14 @@ section {
     font-size: 22pt;
   }
 
-  .intro_date-block_date {
-    font-size: 12px;
+  .intro_date-block {
+    margin-right: 5%;
   }
 
-  .intro_date-block_date-text {
-    font-size: 10px;
+  .intro_date-block_date {
+    font-size: 14px;
+    font-family: Patriciana;
+    font-weight: 500;
   }
 
   .intro_counter-block {
