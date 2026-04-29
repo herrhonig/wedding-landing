@@ -175,6 +175,7 @@ section {
 @media (max-width: 768px) {
   .intro_name-block {
     margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .intro_name_couple-text {
