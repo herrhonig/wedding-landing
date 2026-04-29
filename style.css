@@ -144,7 +144,7 @@ section {
 
 .intro_counter-block {
   padding: 12px;
-  margin-top: 100px;
+  margin-top: 10px;
   display: flex;
   align-self: center;
   justify-content: center;
@@ -173,7 +173,7 @@ section {
 
 @media (max-width: 768px) {
   .intro_name-block {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 
   .intro_name_couple-text {
@@ -190,7 +190,6 @@ section {
 
   .intro_counter-block {
     align-self: flex-end;
-    margin-top: 150px;
   }
 
   .counter-value {
