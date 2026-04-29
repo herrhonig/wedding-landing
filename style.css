@@ -189,8 +189,9 @@ section {
   }
 
   .intro_counter-block {
+    width: 100%;
     align-self: flex-end;
-    gap: 12px;
+    gap: 0;
   }
 
   .counter-value {
