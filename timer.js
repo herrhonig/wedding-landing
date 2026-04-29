@@ -35,6 +35,5 @@ function updateTimer() {
   );
 }
 
-// запуск
 updateTimer();
 setInterval(updateTimer, 1000);

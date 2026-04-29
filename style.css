@@ -130,7 +130,7 @@ section {
   align-self: flex-end;
   margin-right: 50px;
   font-weight: normal;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1;
   color: var(--text-primary);
 }
 
@@ -163,7 +163,7 @@ section {
 }
 
 .counter-value {
-  font-size: 65px;
+  font-size: 62px;
   line-height: 1;
 }
 
@@ -190,11 +190,12 @@ section {
 
   .intro_counter-block {
     align-self: flex-end;
+    gap: 12px;
   }
 
   .counter-value {
-    height: 47px;
-    font-size: 39px;
+    height: 44px;
+    font-size: 36px;
   }
 
   .rest-time {
@@ -612,8 +613,8 @@ section {
   }
 
   .iframe-map {
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     min-width: unset;
   }
 }
